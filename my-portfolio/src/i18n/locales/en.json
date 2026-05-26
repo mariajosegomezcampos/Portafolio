@@ -1,0 +1,20 @@
+{
+  "welcome": "Welcome",
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About Me",
+    "contact": "Contact",
+    "hireMe": "Hire Me",
+    "downloadCV": "Download CV"
+  },
+  "hero": {
+    "title": "Software Developer",
+    "subtitle": "Focused on Frontend development and Clean Architecture."
+  },
+  "contactSection": {
+    "title": "Contac",
+    "titleEnd": "t",
+    "subtitle": "Do you have a project in mind or are you looking to integrate someone with a strong methodological focus into your team? Let's talk!"
+  }
+}
