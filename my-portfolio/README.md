@@ -1,13 +1,15 @@
-# My Portfolio (React + TypeScript)
+# Portfolio Personal (React + TypeScript)
 
-Proyecto generado por plantilla. Comandos principales:
+Este es mi portafolio profesional desarrollado con React y TypeScript, diseñado para mostrar mi trayectoria, habilidades y proyectos destacados.
 
-```bash
-npm install
-npm run dev
-npm run build
-npm run preview
-npm run test
-```
+## 🚀 Tecnologías
+- **Frontend:** React, TypeScript, Tailwind CSS, Framer Motion.
+- **Arquitectura:** Clean Architecture, Microfrontends (enfocado en escalabilidad).
 
-Coloca tu `cv.pdf` en `public/cv.pdf`.
+## 🛠️ Comandos Disponibles
+
+Para trabajar en el proyecto localmente, asegúrate de tener instalado [Node.js](https://nodejs.org/).
+
+1. **Instalar dependencias:**
+   ```bash
+   npm install
