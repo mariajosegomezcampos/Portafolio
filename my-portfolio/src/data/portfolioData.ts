@@ -78,9 +78,9 @@ export const PROJECTS: ProjectData[] = [
 ];
 
 export const PHILOSOPHY_PILLARS = [
-  { id: 'S', title: 'SOLID & Clean Architecture', description: 'Defensora del código desacoplado...' },
-  { id: 'M', title: 'Cultura de Documentación', description: 'Creo firmemente que el software escalable...' },
-  { id: 'V', title: 'Impacto e Innovación Social', description: 'He colaborado como Especialista...' },
+  { id: 'S', title: 'SOLID & Clean Architecture', description: 'Defensora del código desacoplado y limpio. Diseño componentes basados en la separación estricta de responsabilidades, facilitando su extensión y testeo continuo.' },
+  { id: 'M', title: 'Cultura de Documentación', description: 'Creo firmemente que el software escalable requiere claridad colectiva. Redacto Spikes Técnicos rigurosos en Confluence y modelo flujos complejos mediante diagramas de secuencia en Mermaid.' },
+  { id: 'V', title: 'Impacto e Innovación Social', description: 'He colaborado como Especialista en Innovación para el Banco Interamericano de Desarrollo, evaluando herramientas de código abierto con impacto social y generando documentación técnica de alta calidad.' },
 ];
 
 export const EDUCATION_ITEMS = [
