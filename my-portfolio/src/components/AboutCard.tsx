@@ -20,7 +20,6 @@ export const AboutCard = ({ item }: AboutCardProps) => {
       whileHover={{
         y: -6,
         scale: 1.02,
-        // Usamos clases de Tailwind para que se adapten al modo oscuro automáticamente
         borderColor: '#f59e0b',
         boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.1)',
       }}

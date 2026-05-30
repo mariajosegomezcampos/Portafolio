@@ -3,7 +3,7 @@ import { Code2, Zap, Rocket, Coffee } from 'lucide-react';
 import { FEATURE_BLOCKS } from '../data/portfolioData';
 import { JSX } from 'react/jsx-dev-runtime';
 
-// Mapeo de iconos para mantener la lógica separada de los datos
+
 const iconMap: Record<string, JSX.Element> = {
     code: <Code2 className="w-8 h-8 text-amber-400" />,
     zap: <Zap className="w-8 h-8 text-amber-400" />,
@@ -21,10 +21,7 @@ export const FeaturesSection = () => (
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2, duration: 0.4 }}
-            >
-
-                Razones para conectar
-
+            >Razones para conectar
             </motion.h2>
             <div className="h-1 w-20 bg-amber-500 mx-auto mb-12" />
 

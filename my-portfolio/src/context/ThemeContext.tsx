@@ -5,7 +5,6 @@ const ThemeContext = createContext<{ theme: Theme; toggleTheme: () => void } | u
 
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   const [theme, setTheme] = useState<Theme>(() => {
-    // Al iniciar, verifica si ya hay una preferencia guardada
     if (typeof window !== 'undefined') {
       return (localStorage.getItem('theme') as Theme) || 'light';
     }

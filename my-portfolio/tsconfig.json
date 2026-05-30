@@ -9,9 +9,7 @@
     ],
     "allowJs": false,
     "skipLibCheck": true,
-    // Cambia esto a true, es el estándar actual para proyectos React + Vite
     "esModuleInterop": true,
-    // Esto silencia el aviso que te estaba dando problemas
     "ignoreDeprecations": "6.0",
     "allowSyntheticDefaultImports": true,
     "strict": true,

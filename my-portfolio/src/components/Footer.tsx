@@ -7,10 +7,8 @@ export default function Footer(): React.JSX.Element {
     <footer className="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 transition-colors duration-300">
       <div className="mx-auto max-w-7xl px-6 py-8 md:flex md:items-center md:justify-between lg:px-8">
         
-        {/* Enlaces a Redes Profesionales */}
         <div className="flex justify-center space-x-6 md:order-2">
           
-          {/* LinkedIn */}
           <a 
             href="https://linkedin.com/in/mariajosegomezcampos" 
             target="_blank" 
@@ -41,7 +39,6 @@ export default function Footer(): React.JSX.Element {
           </a>
         </div>
 
-        {/* Derechos de Autor */}
         <div className="mt-6 md:order-1 md:mt-0 text-center md:text-left">
           <p className="text-xs font-medium tracking-tight text-slate-600 dark:text-slate-400">
             &copy; {currentYear} <span className="font-bold text-slate-900 dark:text-white uppercase tracking-wide">María José Gómez</span>. Todos los derechos reservados.

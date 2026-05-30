@@ -1,4 +1,3 @@
-// src/data/portfolioData.ts
 export interface FeatureBlock {
   title: string;
   description: string;
@@ -10,10 +9,7 @@ interface ProjectData {
   description: string
   image: string
   tags: string[]
-
-
 }
-
 
 export const PRINCIPLES_SUMMARY: FeatureBlock[] = [
   {
@@ -34,7 +30,7 @@ export const FEATURE_BLOCKS = [
   {
     title: 'Desarrollo Escalable',
     description: 'Arquitectura limpia pensada para crecer, utilizando React, TypeScript y las mejores prácticas.',
-    iconKey: 'code' // Identificador simple
+    iconKey: 'code' 
   },
   {
     title: 'Rendimiento Optimizado',

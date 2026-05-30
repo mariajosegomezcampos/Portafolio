@@ -21,7 +21,6 @@ const heroItemVariants = {
 export default function Hero(): React.JSX.Element {
   return (
     <motion.div
-      // Fondo: Gris muy claro en modo claro, gris muy profundo en modo oscuro
       className="relative overflow-hidden bg-slate-50/40 dark:bg-slate-900/40 py-16 sm:py-20 rounded-none border border-slate-200/60 dark:border-slate-800 transition-colors duration-300"
       initial="hidden"
       animate="visible"

@@ -6,13 +6,13 @@ import es from './locales/es.json'
 i18n.use(initReactI18next).init({
   resources: {
     en: {
-      translation: en // 👈 'translation' es el contenedor por defecto
+      translation: en 
     },
     es: {
       translation: es
     }
   },
-  lng: 'es', // Idioma inicial
+  lng: 'es', 
   fallbackLng: 'es',
   interpolation: {
     escapeValue: false
