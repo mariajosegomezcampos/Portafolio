@@ -3,34 +3,14 @@ import Hero from '../components/Hero'
 import { motion } from 'framer-motion'
 import { PRINCIPLES_SUMMARY } from '../data/portfolioData';
 
-interface FeatureBlock {
-  title: string;
-  description: string;
-}
-
-
-
 const containerVariants = {
   hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.15
-    }
-  }
+  visible: { opacity: 1, transition: { staggerChildren: 0.15 } }
 };
 
 const itemVariants = {
   hidden: { y: 20, opacity: 0 },
-  visible: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      type: "spring",
-      stiffness: 100,
-      damping: 18
-    }
-  }
+  visible: { y: 0, opacity: 1, transition: { type: "spring", stiffness: 100, damping: 18 } }
 };
 
 export default function Home(): React.JSX.Element {
@@ -41,57 +21,41 @@ export default function Home(): React.JSX.Element {
       animate="visible"
       variants={containerVariants}
     >
-      {/* 1. Hero Section */}
       <motion.div variants={itemVariants}>
         <Hero />
       </motion.div>
 
-      {/* 2. Sección de Propuesta de Valor */}
-      <motion.section 
-        className="w-full" 
-        aria-labelledby="features-title"
-        variants={itemVariants}
-      >
+      <motion.section className="w-full" aria-labelledby="features-title" variants={itemVariants}>
         <div className="mx-auto max-w-3xl text-center mb-16">
           <motion.h2 
             id="features-title" 
-            className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl uppercase"
+            className="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl uppercase"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.4 }}
           >
             Ingeniería de Software Orientada a la <span className="text-amber-500 font-light">Excelencia</span>
           </motion.h2>
-          <p className="mt-4 text-base leading-8 text-slate-600 font-medium">
+          <p className="mt-4 text-base leading-8 text-slate-600 dark:text-slate-400 font-medium">
             Más de 6 años impulsando la madurez técnica en plataformas bancarias y de comercio electrónico masivo.
           </p>
         </div>
 
-        {/* Grid de Tarjetas Estilo Alemán Premium */}
         <div className="mx-auto mt-12 max-w-2xl sm:mt-16 lg:mt-20 lg:max-w-none">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-12 lg:max-w-none lg:grid-cols-3">
             {PRINCIPLES_SUMMARY.map((feature, index) => (
               <motion.div 
                 key={index} 
-                className="flex flex-col items-start bg-slate-50/50 p-8 rounded-none border border-slate-200/60 transition-colors duration-300 relative overflow-hidden group"
+                className="flex flex-col items-start bg-slate-50/50 dark:bg-slate-800/50 p-8 rounded-none border border-slate-200/60 dark:border-slate-700 transition-colors duration-300 relative overflow-hidden group"
                 variants={itemVariants}
-                whileHover={{ 
-                  y: -6, 
-                  scale: 1.01,
-                  backgroundColor: '#ffffff',
-                  borderColor: '#f59e0b',
-                  boxShadow: '0 10px 25px -5px rgba(15, 23, 42, 0.05)'
-                }}
               >
-                {/* Indicador de Foco Izquierdo en Hover */}
                 <span className="absolute top-0 left-0 w-0 h-full bg-amber-500 transition-all duration-300 group-hover:w-[3px]" />
 
-                <dt className="text-sm font-bold tracking-wide uppercase leading-7 text-slate-900 mb-4 flex items-center gap-3">
-                  {/* Pequeña caja en lugar de círculo para calzar la geometría recta */}
+                <dt className="text-sm font-bold tracking-wide uppercase leading-7 text-slate-900 dark:text-white mb-4 flex items-center gap-3">
                   <div className="h-2 w-2 bg-amber-500 transition-transform duration-300 group-hover:scale-125" />
                   {feature.title}
                 </dt>
-                <dd className="flex flex-auto flex-col text-sm leading-6 text-slate-600">
+                <dd className="flex flex-auto flex-col text-sm leading-6 text-slate-600 dark:text-slate-400">
                   <p className="flex-auto">{feature.description}</p>
                 </dd>
               </motion.div>
@@ -100,18 +64,17 @@ export default function Home(): React.JSX.Element {
         </div>
       </motion.section>
 
-      {/* 3. Sección de Llamado a la Acción (CTA) */}
+      {/* CTA Section */}
       <motion.section 
-        className="bg-slate-900 text-white rounded-none p-10 md:p-14 text-center w-full shadow-xs relative overflow-hidden border border-slate-800"
+        className="bg-slate-900 dark:bg-slate-800 text-white rounded-none p-10 md:p-14 text-center w-full shadow-xs relative overflow-hidden border border-slate-800 dark:border-slate-700"
         variants={itemVariants}
       >
-        {/* Grilla técnica discreta de fondo */}
         <div className="absolute -inset-40 bg-[radial-gradient(#f59e0b_1px,transparent_1px)] [background-size:24px_24px] opacity-5" />
 
         <h3 className="text-xl font-bold uppercase tracking-wide mb-4 relative z-10">
           ¿Quieres ver la arquitectura en acción?
         </h3>
-        <p className="text-slate-400 text-sm max-w-xl mx-auto mb-8 relative z-10">
+        <p className="text-slate-400 dark:text-slate-300 text-sm max-w-xl mx-auto mb-8 relative z-10">
           Explora soluciones técnicas simuladas basadas en desafíos reales de escalabilidad, microfrontends y testing automatizado.
         </p>
         

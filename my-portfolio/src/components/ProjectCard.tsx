@@ -31,7 +31,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps): React
 
       {/* 3. NÚMERO: z-10 (mismo nivel que el overlay o un poco más) */}
       <span
-        className="absolute bottom-[-35px] left-[-15px] text-[180px] font-black font-mono leading-none select-none pointer-events-none z-10 opacity-30 transition-all duration-300 group-hover:opacity-50 group-hover:scale-105"
+        className="absolute bottom-[-24px] left-[-8px] text-[165px] font-black font-mono leading-none select-none pointer-events-none z-10 opacity-30 transition-all duration-300 group-hover:opacity-50 group-hover:scale-105"
         style={{
           WebkitTextStroke: '2px #f59e0b',
           color: 'transparent'

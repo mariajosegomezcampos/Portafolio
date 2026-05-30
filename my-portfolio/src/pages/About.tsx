@@ -14,7 +14,6 @@ export default function About(): React.JSX.Element {
       variants={containerVariants} 
       initial="hidden" 
       animate="visible" 
-      // Restaurado tu espaciado original
       className="space-y-20 py-16 max-w-7xl mx-auto px-6 lg:px-8 min-h-screen"
     >
       
@@ -28,9 +27,9 @@ export default function About(): React.JSX.Element {
       </section>
 
       {/* 3. Educación */}
-      <section className="pt-16 border-t border-slate-200">
+      <section className="pt-16 border-t border-slate-200 dark:border-slate-800 transition-colors duration-300">
         <div className="text-center max-w-3xl mx-auto mb-12">
-           <h2 className="text-2xl font-bold tracking-tight text-slate-900 uppercase">
+           <h2 className="text-2xl font-bold tracking-tight text-slate-900 dark:text-white uppercase transition-colors duration-300">
              Educación & <span className="text-amber-500 font-light">Formación</span>
            </h2>
         </div>

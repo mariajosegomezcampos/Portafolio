@@ -16,8 +16,8 @@ export const FeaturesSection = () => (
 
         <div className="text-center mb-12 space-y-4">
             <motion.h2
-                className=" mb-12 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl uppercase"
-                initial={{ opacity: 0, y: 10 }}  
+                className="mb-6 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl uppercase"
+                initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2, duration: 0.4 }}

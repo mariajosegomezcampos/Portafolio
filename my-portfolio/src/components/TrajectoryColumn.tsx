@@ -1,9 +1,12 @@
 import { motion } from 'framer-motion';
-import { itemVariants } from '../lib/animations'; 
+import { itemVariants } from '../lib/animations';
 
 export const TrajectoryColumn = () => (
-  <motion.div variants={itemVariants} className="space-y-6 text-base leading-7 text-slate-700">
-    <h2 className="text-2xl font-bold tracking-tight text-slate-900 border-b-2 border-amber-500 pb-2 inline-block">
+  <motion.div 
+    variants={itemVariants} 
+    className="space-y-6 text-base leading-7 text-slate-700 dark:text-slate-300 transition-colors duration-300"
+  >
+    <h2 className="text-2xl font-bold tracking-tight text-slate-900 dark:text-white border-b-2 border-amber-500 pb-2 inline-block transition-colors duration-300">
       Mi Trayectoria
     </h2>
     <p>
